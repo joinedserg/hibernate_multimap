@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="Something.Something.tt.Some" table="something" catalog="">
+		<id name="id" type="java.lang.Integer" column="entity_id1">
+			<!-- generator class="increment" /-->
+		</id>  		
+		<map name="mmapl" table="relations" cascade="delete" collection-type="Something.Something.test.MultiMapType" lazy="false" >
+			<key column="entity_id1"/>		
+			<map-key column="attribute_id" type="java.lang.Integer" />
+			<many-to-many column="entity_id2" class="Something.Something.tt.Some" />			
+		</map>
+	</class>
+</hibernate-mapping>
