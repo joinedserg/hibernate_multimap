@@ -15,11 +15,11 @@
 		<!-- org.springframework.version>4.0.5.RELEASE</org.springframework.version-->
 		
 		<org.springframework.version>4.2.2.RELEASE</org.springframework.version>
-		<!-- org.hibernate.version>4.3.5.Final</org.hibernate.version-->
+		<org.hibernate.version>4.3.5.Final</org.hibernate.version>
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
 		
 		<!-- org.springframework.version>5.0.0.M4</org.springframework.version-->
-		<org.hibernate.version>5.0.7.Final</org.hibernate.version>
+		<!-- org.hibernate.version>5.0.7.Final</org.hibernate.version-->
 
 	</properties>
 
@@ -59,7 +59,8 @@
 <dependency>
     <groupId>org.hibernate.common</groupId>
     <artifactId>hibernate-commons-annotations</artifactId>
-    <version>5.0.1.Final</version>
+    <!-- version>5.0.1.Final</version-->
+    <version>4.0.4.Final</version>
 </dependency>
 
 		<dependency>

@@ -36,11 +36,14 @@ public class App
         
         Some s1 = new Some(1);
         Some s2 = new Some(2);
+        //Some s3 = new Some(3);
         
         serviceEntity.save(s1, "s1");
         serviceEntity.save(s2, "s2");
+        //serviceEntity.save(s3, "s3");
         
         s1.addMapElem(s2, 2);
+        //s1.addMapElem(s3, 3);
         
         serviceEntity.update(s1);        
         System.out.println("\n");

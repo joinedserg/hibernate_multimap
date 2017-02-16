@@ -23,6 +23,8 @@ public class MediaServiceEntity {
     @Transactional
     public void update(Some entity) {
         dao.update(entity);
+        
+        System.out.println("");
     }
     
     
